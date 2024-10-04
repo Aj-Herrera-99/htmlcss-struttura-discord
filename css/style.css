@@ -30,8 +30,12 @@ p {
     font-size: 1.2rem;
 }
 
+h1, h2 {
+    font-size: 3rem;
+}
+
 h1 + p, h2 + p {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .debug {
@@ -69,8 +73,8 @@ h1 + p, h2 + p {
     text-align: center;
 }
 
-h1, h2 {
-    font-size: 3rem;
+.text-lg {
+    font-size: 2.5rem;
 }
 
 /* utility flex */
@@ -174,16 +178,36 @@ header p {
 
 /* main */
 main section .image {
-    width: 60%;
+    /* width: 67%; */
 }
 
 main section .content {
-    flex-grow: 1;
+    width: 33%;
 }
 
 #technology .image, #technology .content {
     width: 100%;
 }
+
+#call-to-action {
+    height: 400px;
+}
+
+#call-to-action > div {
+    border: 1px solid red;
+    padding: 50px 50px 0px ;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#call-to-action h2 {
+    margin-bottom: 50px;
+}
+
+#call-to-action button {
+}
+
 /* top-footer */
 .left {
     float: left;
