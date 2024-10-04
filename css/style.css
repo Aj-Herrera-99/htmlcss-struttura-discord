@@ -51,12 +51,22 @@ body {
 .flex-row {
     flex-direction: row;
 }
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-col {
+    flex-direction: column;
+}
 .flex-between {
     justify-content: space-between;
 }
 .flex-center {
     justify-content: center;
 }
+.items-center {
+    align-items: center;
+}
+
 
 /* container */
 .outer-container {
@@ -70,4 +80,17 @@ body {
     max-width: 800px;
     margin: 0 auto;
     background-color: green;
+}
+
+/* main */
+main section .image {
+    width: 60%;
+}
+
+main section .content {
+    flex-grow: 1;
+}
+
+#technology .image, #technology .content {
+    width: 100%;
 }
