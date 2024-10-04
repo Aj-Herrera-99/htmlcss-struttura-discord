@@ -44,6 +44,20 @@ body {
     color: var(--color-dark);
 }
 
+/* utility flex */
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-center {
+    justify-content: center;
+}
+
 /* container */
 .outer-container {
     border: 1px solid blue;
