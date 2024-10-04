@@ -177,10 +177,25 @@ header p {
 
 
 /* main */
-main section .image {
-    /* width: 67%; */
+.wave-1hkxOo {
+    display: block;
+}
+.wave-1hkxOo path {
+    fill: var(--color-light) ;
 }
 
+.wave-upside-down {
+    transform: rotate(180deg);
+}
+
+main > section:not(.bg-light), main > div:not(.wave-upside-down)  {
+    /* background-color: red; */
+    margin-top: 150px;
+}
+
+main section .image {
+    width: 67%;
+}
 main section .content {
     width: 33%;
 }
@@ -193,7 +208,7 @@ main section .content {
     height: 400px;
 }
 
-#call-to-action > div {
+#call-to-action > div > div {
     border: 1px solid red;
     padding: 50px 50px 0px ;
     background-image: url("../img/stars.svg");
