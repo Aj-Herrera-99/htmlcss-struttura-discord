@@ -72,6 +72,12 @@ ul {
 .flex-center {
     justify-content: center;
 }
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
 .items-center {
     align-items: center;
 }
@@ -97,7 +103,7 @@ ul {
 /* header */
 header nav > :first-child, header nav > :last-child {
     background-color: red;
-    width: 25%;
+    width: 20%;
 }
 
 header img {
