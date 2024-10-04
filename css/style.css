@@ -9,6 +9,7 @@
     --color-dark: #23272A;
     --color-light: #e8e8e8;
     --color-contrast: #7289DA;
+    --font-small: .9rem;
 }
 
 body {
@@ -55,6 +56,9 @@ h1 + p, h2 + p {
 .bg-white {
     background-color: white;
 }
+.bg-contrast {
+    background-color: var(--color-contrast);
+}
 
 /* text format */
 .text-white {
@@ -74,7 +78,11 @@ h1 + p, h2 + p {
 }
 
 .text-lg {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+}
+
+.text-sm {
+    font-size: var(--font-small);
 }
 
 /* utility flex */
@@ -128,12 +136,7 @@ button {
    padding: 10px 13px;
    border: none;
    border-radius: 18px;
-   font-size: 1rem;
    cursor: pointer;
-}
-
-header nav button, footer button {
-    font-size: .8rem;
 }
 
 /* header */
@@ -241,6 +244,18 @@ footer{
 
 .top-footer ul {
     flex-grow: 1;
+}
+
+.inner-list li {
+    font-size: var(--font-small);
+}
+
+.inner-list li:first-child {
+    color: var(--color-contrast);
+}
+
+.inner-list li {
+    margin-bottom: 15px;
 }
 
 /* bottom-footer */
