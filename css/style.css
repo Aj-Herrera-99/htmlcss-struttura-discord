@@ -40,7 +40,7 @@ h1 + p, h2 + p {
 }
 
 .debug {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* background color */
@@ -78,11 +78,15 @@ h1 + p, h2 + p {
 }
 
 .text-lg {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .text-sm {
     font-size: var(--font-small);
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* utility flex */
@@ -116,17 +120,20 @@ h1 + p, h2 + p {
 .flex-grow-1 {
     flex-grow: 1;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 
 /* container */
 .outer-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 1200px;
     margin-inline: auto;
 }
 
 .inner-container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     max-width: 800px;
     margin-inline: auto;
 }
@@ -148,7 +155,7 @@ header {
 }
 
 header nav {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 header li a {
@@ -212,7 +219,6 @@ main section .content {
 }
 
 #call-to-action > div > div {
-    border: 1px solid red;
     padding: 50px 50px 0px ;
     background-image: url("../img/stars.svg");
     background-repeat: no-repeat;
@@ -233,8 +239,15 @@ footer{
 
 /* top-footer */
 .left {
-    float: left;
+    margin-right: 75px;
     width: 20%;
+}
+
+.left img { 
+    width: 20px;
+}
+.left :nth-child(2) {
+    margin: 15px auto;
 }
 
 .top-footer {
@@ -256,6 +269,13 @@ footer{
 
 .inner-list li {
     margin-bottom: 15px;
+}
+
+.icon-social{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* bottom-footer */
