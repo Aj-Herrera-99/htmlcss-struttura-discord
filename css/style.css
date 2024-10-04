@@ -13,6 +13,7 @@
 
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--color-dark);
 }
 
 .debug {
@@ -28,6 +29,19 @@ body {
 }
 .bg-dark {
     background-color: var(--color-dark);
+}
+
+/* text format */
+.text-white {
+    color: #fff;
+}
+
+.text-contrast {
+    color: var(--color-contrast);
+}
+
+.text-dark {
+    color: var(--color-dark);
 }
 
 /* container */
