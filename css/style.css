@@ -222,6 +222,11 @@ main section .content {
 
 #call-to-action button {
 }
+/* footer */
+footer{
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
 
 /* top-footer */
 .left {
@@ -231,9 +236,12 @@ main section .content {
 
 .top-footer {
     border-bottom: 1px solid var(--color-light);
+    margin-bottom: 10px;
 }
 
 .top-footer ul {
     flex-grow: 1;
 }
+
+/* bottom-footer */
 
