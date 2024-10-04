@@ -98,9 +98,13 @@ main section .content {
 .left {
     float: left;
     width: 20%;
-    height: 100%;
+}
+
+.top-footer {
+    border-bottom: 1px solid var(--color-light);
 }
 
 .top-footer ul {
     flex-grow: 1;
 }
+
