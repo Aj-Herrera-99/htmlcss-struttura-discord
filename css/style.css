@@ -94,3 +94,13 @@ main section .content {
 #technology .image, #technology .content {
     width: 100%;
 }
+/* top-footer */
+.left {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.top-footer ul {
+    flex-grow: 1;
+}
