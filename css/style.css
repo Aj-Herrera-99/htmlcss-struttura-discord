@@ -30,6 +30,10 @@ p {
     font-size: 1.2rem;
 }
 
+h1 + p, h2 + p {
+    margin-top: 30px;
+}
+
 .debug {
     border: 1px solid red;
 }
@@ -65,7 +69,7 @@ p {
     text-align: center;
 }
 
-.title {
+h1, h2 {
     font-size: 3rem;
 }
 
@@ -106,13 +110,13 @@ p {
 .outer-container {
     border: 1px solid blue;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .inner-container {
     border: 1px solid green;
     max-width: 800px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 /* button */
@@ -121,6 +125,7 @@ button {
    border: none;
    border-radius: 18px;
    font-size: 1rem;
+   cursor: pointer;
 }
 
 header nav button, footer button {
@@ -136,22 +141,34 @@ header {
 }
 
 header nav {
-    /* background-color: #fff; */
-    padding-top: 15px;
+    margin-top: 15px;
+}
+
+header li a {
+    /* background-color: #23272A; */
+    padding: 10px 15px;
 }
 
 header nav > :first-child, header nav > :last-child {
-    width: 25%;
+    width: 26%;
 }
 
 #hero {
     margin: 150px auto 0 auto;
-    /* background-color: green; */
 }
 
 header p {
-    margin-top: 30px;
     margin-bottom: 15px;
+}
+
+.arrow {
+    display: inline-block;
+    scale: 110%;
+}
+
+.gap {
+    display: inline-block;
+    width: 10px;
 }
 
 
