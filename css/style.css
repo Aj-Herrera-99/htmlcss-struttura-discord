@@ -115,14 +115,20 @@ h1 + p, h2 + p {
 .flex-end {
     justify-content: flex-end;
 }
-.items-center {
-    align-items: center;
-}
 .flex-grow-1 {
     flex-grow: 1;
 }
 .flex-wrap {
     flex-wrap: wrap;
+}
+.items-center {
+    align-items: center;
+}
+.items-start {
+    align-items: flex-start;
+}
+.content-start {
+    align-content: flex-start;
 }
 
 
@@ -153,8 +159,10 @@ button {
 header {
     background-image: url("../img/jumbo.png");
     background-repeat: no-repeat;
+    /* background-position: center; */
     height: 530px;
     background-size: cover;
+    background-position: center;
 }
 
 header nav {
@@ -171,7 +179,7 @@ header nav > :first-child, header nav > :last-child {
 }
 
 #hero {
-    margin: 150px auto 0 auto;
+    /* vai giu */
 }
 
 header p {
@@ -247,13 +255,14 @@ footer{
 
 /* top-footer */
 .left {
-    min-width: 350px;
+    float: left ;
+    min-width: 300px;
 }
 
 .left img { 
     width: 20px;
 }
-.left :nth-child(2) {
+.left div:nth-child(2) {
     margin: 15px auto;
 }
 
@@ -285,6 +294,10 @@ footer{
     align-items: center;
 }
 
+.icon-social > i {
+    font-size: 19px;
+}
+
 .footer-select {
     border-color: transparent;
 }
@@ -294,12 +307,8 @@ footer{
 /* responsiveness 
 provo a giocare un po con gli effetti e conseguenze del flex e vedere quanto responsive puo essere la pagina
 */
-.row-gap-20 {
-    row-gap: 20px;
-}
-
-.column-gap-100 {
-    column-gap: 100px;
+.row-gap-100 {
+    row-gap: 100px;
 }
 
 main section > div {
@@ -311,3 +320,13 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+#hero {
+    min-height: 430px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
